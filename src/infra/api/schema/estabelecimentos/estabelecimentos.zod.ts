@@ -437,7 +437,7 @@ export const BuscarSemanticaQueryParams = zod.object({
   "query": zod.string().describe('Texto da busca')
 })
 
-export const BuscarSemanticaResponse = zod.array()
+export const BuscarSemanticaResponse = zod.array(zod.unknown())
 
 /**
  * @summary Melhorar texto/descrição para guia comercial
