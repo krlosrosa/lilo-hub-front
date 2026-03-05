@@ -47,6 +47,29 @@ const decorations = [
   { emoji: "🏗️", x: 70, y: 2, size: 14 },
   { emoji: "🏢", x: 30, y: 18, size: 14 },
   { emoji: "🏬", x: 92, y: 28, size: 14 },
+  // extra houses and buildings to densify the city
+  { emoji: "🏘️", x: 18, y: 22, size: 16 },
+  { emoji: "🏘️", x: 28, y: 26, size: 16 },
+  { emoji: "🏠", x: 12, y: 32, size: 16 },
+  { emoji: "🏡", x: 20, y: 38, size: 16 },
+  { emoji: "🏠", x: 32, y: 42, size: 16 },
+  { emoji: "🏢", x: 46, y: 30, size: 18 },
+  { emoji: "🏢", x: 52, y: 20, size: 18 },
+  { emoji: "🏙️", x: 58, y: 35, size: 18 },
+  { emoji: "🏙️", x: 64, y: 42, size: 18 },
+  { emoji: "🏬", x: 72, y: 30, size: 16 },
+  { emoji: "🏬", x: 78, y: 36, size: 16 },
+  { emoji: "🏠", x: 82, y: 44, size: 16 },
+  { emoji: "🏡", x: 88, y: 40, size: 16 },
+  { emoji: "🏘️", x: 60, y: 56, size: 16 },
+  { emoji: "🏠", x: 68, y: 60, size: 16 },
+  { emoji: "🏡", x: 74, y: 64, size: 16 },
+  { emoji: "🏢", x: 52, y: 70, size: 18 },
+  { emoji: "🏙️", x: 58, y: 76, size: 18 },
+  { emoji: "🏬", x: 66, y: 72, size: 16 },
+  { emoji: "🏘️", x: 36, y: 68, size: 16 },
+  { emoji: "🏠", x: 30, y: 60, size: 16 },
+  { emoji: "🏡", x: 24, y: 66, size: 16 },
 
   // City infrastructure
   { emoji: "⛲", x: 48, y: 52, size: 20 },
@@ -128,6 +151,16 @@ function CityRoads() {
       <rect x="335" y="220" width="50" height="100" rx="12" fill="hsl(145 35% 82%)" opacity="0.45" />
       <rect x="100" y="410" width="80" height="60" rx="12" fill="hsl(145 35% 82%)" opacity="0.4" />
       <rect x="240" y="550" width="60" height="80" rx="12" fill="hsl(145 40% 80%)" opacity="0.45" />
+
+      {/* Dense downtown blocks */}
+      <rect x="130" y="160" width="60" height="70" rx="10" fill="hsl(220 15% 90%)" opacity="0.9" />
+      <rect x="210" y="150" width="70" height="80" rx="10" fill="hsl(220 18% 88%)" opacity="0.9" />
+      <rect x="150" y="260" width="70" height="70" rx="10" fill="hsl(220 16% 89%)" opacity="0.9" />
+      <rect x="235" y="270" width="65" height="65" rx="10" fill="hsl(220 18% 87%)" opacity="0.9" />
+
+      {/* Waterfront / river on the side */}
+      <rect x="0" y="300" width="35" height="260" rx="18" fill="hsl(205 70% 85%)" opacity="0.7" />
+      <rect x="5" y="310" width="25" height="240" rx="14" fill="hsl(205 75% 80%)" opacity="0.8" />
     </svg>
   );
 }
@@ -137,7 +170,7 @@ const WorldMap = ({ children }: WorldMapProps) => {
 
   return (
     <div
-      className="relative w-full min-h-[700px] mx-auto max-w-md overflow-hidden"
+      className="relative mx-auto min-h-[750px] min-w-[900px] w-[900px] md:w-[1100px] overflow-hidden rounded-3xl border border-border shadow-xl"
       style={{
         background: `
           linear-gradient(180deg, 
