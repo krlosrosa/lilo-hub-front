@@ -1,4 +1,4 @@
-import { UserModel } from "@/src/domain/user/model/user.model";
+import { UserModel } from "@/domain/user/model/user.model";
 import { jwtDecode } from "jwt-decode";
 
 export function tokenToUser(token: string): UserModel {

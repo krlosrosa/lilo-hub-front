@@ -1,5 +1,5 @@
 // app/api/me/route.ts
-import { tokenToUser } from "@/src/application/user/mappers/tokenToUser";
+import { tokenToUser } from "@/application/user/mappers/tokenToUser";
 import { cookies } from "next/headers";
 
 export async function GET() {
