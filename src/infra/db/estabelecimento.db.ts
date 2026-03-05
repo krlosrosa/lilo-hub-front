@@ -33,7 +33,7 @@ export class EstabelecimentoDb implements EstabelecimentoRepository {
   }
 
   async buscarEnderecoPorEstabelecimentoIdDb(territorio: string, slug: string) {
-    const response = await buscarEnderecoPorEstabelecimentoId(territorio, slug);
+    const response = await buscarEnderecoPorEstabelecimentoId(slug);
     return response;
   }
 

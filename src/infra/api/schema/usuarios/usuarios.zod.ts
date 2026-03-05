@@ -15,7 +15,7 @@ export const criarUsuarioControllerCriarUsuarioBodyPasswordMin = 8;
 
 export const CriarUsuarioControllerCriarUsuarioBody = zod.object({
   "name": zod.string(),
-  "email": zod.email().stringFormat('email', criarUsuarioControllerCriarUsuarioBodyEmailRegExp),
+  "email": zod.string().email().regex(criarUsuarioControllerCriarUsuarioBodyEmailRegExp),
   "password": zod.string().min(criarUsuarioControllerCriarUsuarioBodyPasswordMin)
 })
 
