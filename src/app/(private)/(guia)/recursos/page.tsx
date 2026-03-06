@@ -15,6 +15,7 @@ const RECURSOS_GUIA = [
   { href: "/mapa-cupom", label: "Mapa cupom" },
   { href: "/pergunta-relampago", label: "Pergunta relâmpago" },
   { href: "/agendamento", label: "Agendamento" },
+  { href: "/cardapio-digital", label: "Cardápio digital" },
 ] as const;
 
 export default function RecursosPage() {
