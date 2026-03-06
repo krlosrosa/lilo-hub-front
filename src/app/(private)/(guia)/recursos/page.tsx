@@ -14,6 +14,7 @@ const RECURSOS_GUIA = [
   { href: "/campo-minado", label: "Campo minado" },
   { href: "/mapa-cupom", label: "Mapa cupom" },
   { href: "/pergunta-relampago", label: "Pergunta relâmpago" },
+  { href: "/agendamento", label: "Agendamento" },
 ] as const;
 
 export default function RecursosPage() {
