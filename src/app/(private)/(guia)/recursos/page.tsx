@@ -16,6 +16,7 @@ const RECURSOS_GUIA = [
   { href: "/pergunta-relampago", label: "Pergunta relâmpago" },
   { href: "/agendamento", label: "Agendamento" },
   { href: "/cardapio-digital", label: "Cardápio digital" },
+  { href: "/lista-espera", label: "Lista de espera" },
 ] as const;
 
 export default function RecursosPage() {
