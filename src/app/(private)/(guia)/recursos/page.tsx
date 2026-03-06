@@ -17,6 +17,7 @@ const RECURSOS_GUIA = [
   { href: "/agendamento", label: "Agendamento" },
   { href: "/cardapio-digital", label: "Cardápio digital" },
   { href: "/lista-espera", label: "Lista de espera" },
+  { href: "/cartao-fidelidade-pontos", label: "Cartão fidelidade (pontos)" },
 ] as const;
 
 export default function RecursosPage() {

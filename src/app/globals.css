@@ -99,6 +99,13 @@
   --sidebar-border: hsl(220 13% 91%);
   --sidebar-ring: hsl(168 80% 36%);
 
+  --gradient-gold: linear-gradient(135deg, hsl(38, 92%, 50%), hsl(30, 95%, 55%));
+  --gradient-accent: linear-gradient(135deg, hsl(152, 60%, 42%), hsl(160, 65%, 48%));
+  --gradient-hero: linear-gradient(160deg, hsl(38, 92%, 50%) 0%, hsl(25, 90%, 55%) 50%, hsl(15, 85%, 52%) 100%);
+
+  --shadow-card: 0 2px 12px -2px hsl(38 92% 50% / 0.08);
+  --shadow-elevated: 0 8px 30px -8px hsl(38 92% 50% / 0.15);
+
   /* Badges (light) */
   --badge-popular: 142 70% 45%;
   --badge-promo: 0 84% 60%;
@@ -177,6 +184,30 @@
 }
 
 @layer utilities {
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+  .bg-gold-light {
+    background-color: hsl(var(--gold-light));
+  }
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
 
   .scrollbar-hide {
     -ms-overflow-style: none;
