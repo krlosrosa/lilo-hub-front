@@ -56,7 +56,7 @@ const RewardCard = ({ reward, userPoints, layout = "grid" }: RewardCardProps) =>
     <div
       role="button"
       tabIndex={canRedeem ? 0 : -1}
-      onClick={() => canRedeem && router.push(`/rewards/${reward.id}`)}
+      onClick={() => canRedeem && router.push(`/cartao-fidelidade-pontos/reward/${reward.id}`)}
       className={`group relative flex w-full flex-col overflow-hidden rounded-xl border bg-card text-left shadow-card transition-all ${
         canRedeem
           ? "border-primary/20 cursor-pointer hover:shadow-elevated active:scale-[0.98]"
