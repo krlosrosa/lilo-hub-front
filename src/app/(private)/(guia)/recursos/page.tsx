@@ -18,6 +18,7 @@ const RECURSOS_GUIA = [
   { href: "/cardapio-digital", label: "Cardápio digital" },
   { href: "/lista-espera", label: "Lista de espera" },
   { href: "/cartao-fidelidade-pontos", label: "Cartão fidelidade (pontos)" },
+  { href: "/caca-niquel", label: "Caca niquel" },
 ] as const;
 
 export default function RecursosPage() {
