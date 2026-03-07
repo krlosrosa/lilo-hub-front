@@ -19,6 +19,7 @@ const RECURSOS_GUIA = [
   { href: "/lista-espera", label: "Lista de espera" },
   { href: "/cartao-fidelidade-pontos", label: "Cartão fidelidade (pontos)" },
   { href: "/caca-niquel", label: "Caca niquel" },
+  { href: "/roleta", label: "Roleta" },
 ] as const;
 
 export default function RecursosPage() {
