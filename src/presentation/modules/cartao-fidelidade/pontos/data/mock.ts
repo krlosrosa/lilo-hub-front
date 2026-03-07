@@ -59,7 +59,7 @@ export const LEVELS: Record<LoyaltyLevel, { label: string; minPoints: number; ne
 export const userProfile: UserProfile = {
   name: "Marina Silva",
   email: "marina@email.com",
-  points: 1240,
+  points: 500,
   totalPointsEarned: 2850,
   level: "silver",
   memberSince: "Mar 2025",
