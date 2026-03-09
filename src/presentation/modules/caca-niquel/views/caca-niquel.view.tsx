@@ -1,7 +1,7 @@
 "use client";
 import SlotMachine from "../components/slotMachine";
 
-const Index = () => {
+const CacaNiquelView = () => {
   return (
     <div className="min-h-screen bg-background flex items-start justify-center px-4 py-8">
       <SlotMachine />
@@ -9,4 +9,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default CacaNiquelView;

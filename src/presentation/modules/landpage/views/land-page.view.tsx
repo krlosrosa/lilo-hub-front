@@ -13,7 +13,7 @@ import {
   CollapsibleTrigger,
 } from "@/presentation/shared/components/ui/collapsible";
 import { useState } from "react";
-import { useParams, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const CollapsibleSection = ({
   icon: Icon,
