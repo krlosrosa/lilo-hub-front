@@ -10,7 +10,7 @@ interface SpinWheelProps {
   onAnimationComplete?: () => void;
 }
 
-export function SpinWheel({ rotation, isSpinning, onAnimationComplete }: SpinWheelProps) {
+export function SpinWheel({ rotation, onAnimationComplete }: SpinWheelProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const wheelRef = useRef<HTMLDivElement>(null);
   const prevRotation = useRef(rotation);
